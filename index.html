@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bda882da3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" id="user-text" placeholder="Search for username...">
+            <button class="button-input">Search</button>
+        </div>
+        <div class="information-container show">
+            <div class="user-info">
+                <img src="" alt="profile-img" data-info="avatar_url" class="profile-image">
+                <div class="container-personal">
+                    <div data-info="name" class="profile-name"></div>
+                    <div data-info="login" class="profile-username"></div>
+                    <div data-info="created_at" class="profile-create-date"></div>
+                </div>
+            </div>
+            <div class="user-stats">
+                <div class="stats-title">Repos</div>
+                <div class="stats-title">Followers</div>
+                <div class="stats-title">Following</div>
+                <div class="stats-result" data-result="public_repos"></div>
+                <div class="stats-result" data-result="followers"></div>
+                <div class="stats-result" data-result="following"></div>
+            </div>
+
+            <div class="user-social-media">
+                <i class="fas fa-map-marker" data-social="location"><div class="not-found"></div> </i>
+                <i class="fas fa-link" data-social="blog"><a target="_blank" href="" class="not-found"></a></i>
+                <i class="fab fa-twitter" data-social="twitter_username"><div class="not-found"></div> </i>
+                <i class="fas fa-building" data-social="company"><div class="not-found"></div> </i>
+            </div>
+        </div>
+        <div class="user-not-found">
+            <div class="full-container">
+                <i class="fas fa-user-times"></i>
+                <h1>User Not Found</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/github-API/github.js"></script>
+
+</html>
